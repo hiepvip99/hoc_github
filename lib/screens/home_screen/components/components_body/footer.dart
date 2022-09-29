@@ -131,6 +131,7 @@ class Footer extends StatelessWidget {
             children: [
               Container(),
               Text('Contact to me'),
+              Text('Contact to me'),
             ],
           ),
         )
