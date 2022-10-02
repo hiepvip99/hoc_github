@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:web_dashboard_learn/components/product.dart';
 
 class ProductShowAll extends StatelessWidget {
   const ProductShowAll({
@@ -20,23 +21,38 @@ class ProductShowAll extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Text('FURNITURE'),
+                  Text(
+                    'FURNITURE',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text('LIGHTING'),
+                  Text(
+                    'LIGHTING',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text('SOFAS'),
+                  Text(
+                    'SOFAS',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text('LOUNGE CHAIRS'),
+                  Text(
+                    'LOUNGE CHAIRS',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(
                     width: 20,
                   ),
-                  Text('ALL'),
+                  Text(
+                    'ALL',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.25,
                   )
@@ -47,6 +63,7 @@ class ProductShowAll extends StatelessWidget {
                   Text('BACK'),
                   Text(' | '),
                   Text('NEXT'),
+                  Text('    Page 0 of 0'),
                 ],
               ),
             ],
@@ -60,13 +77,18 @@ class ProductShowAll extends StatelessWidget {
                 shrinkWrap: true,
                 itemCount: 8,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    childAspectRatio: 0.7,
+                    childAspectRatio: 0.65,
                     crossAxisCount: 4,
-                    crossAxisSpacing: 20,
-                    mainAxisSpacing: 20),
-                itemBuilder: (context, index) => Container(
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10),
+                itemBuilder: (context,
+                        index) => /* Container(
                   height: 340,
                   color: Colors.yellow,
+                ),*/
+                    Container(
+                  child: Product(),
+                  color: Colors.grey[300],
                 ),
               ),
             ),
