@@ -18,7 +18,10 @@ class Footer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('ABOUT'),
+                      Text(
+                        'ABOUT',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       SizedBox(
                         height: 30,
                       ),
@@ -47,7 +50,10 @@ class Footer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('CUSTOMER SERVICES'),
+                      Text(
+                        'CUSTOMER SERVICES',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       SizedBox(
                         height: 30,
                       ),
@@ -77,7 +83,10 @@ class Footer extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('FURNITURE'),
+                      Text(
+                        'FURNITURE',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       SizedBox(
                         height: 30,
                       ),
@@ -98,7 +107,10 @@ class Footer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('ACCESSORIES'),
+                      Text(
+                        'ACCESSORIES',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                       SizedBox(
                         height: 30,
                       ),
@@ -126,6 +138,7 @@ class Footer extends StatelessWidget {
             ),
           ),
         ),
+        const Divider(),
         Container(
           child: Row(
             children: [
